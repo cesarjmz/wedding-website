@@ -1,0 +1,79 @@
+html, body{
+	height: 100%;
+	background-color: #FEDFE1;
+  /* From Google Fonts */
+	font-family: 'Nunito', sans-serif;
+	text-align: center;
+}
+
+h1{
+  /* From Google Fonts */
+	font-family: 'Dancing Script', cursive;
+	font-size: 4em;
+}
+
+h1{
+  /* From Google Fonts */
+	font-family: 'San Serif';
+	font-size: 2em;
+}
+
+#schedule{
+	padding-bottom:  75px;
+}
+
+table{
+	width:  50%;
+	margin: auto;
+	border-collapse: collapse;
+}
+
+td, th {
+  border: 1px solid black;
+  padding: 10px;
+}
+
+th {
+  padding:  10px 0px;
+  background-color: black;
+  color: #FEDFE1;
+}
+
+hr{
+	width: 50%;
+    background: black;
+    border: none;
+    height: 1px;
+    margin: 50px auto;
+}
+
+.carousel-img{
+	width:  35%;
+	/* Hide all carousel images */
+	display: none;
+  justify-content: center;
+}
+
+.carousel-img.selected{
+	/* Display only selected image */
+	display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.thumbnail{
+  /* Use flexbox to display images inline */
+	display: flex;
+	justify-content: center; /*space-between;*/
+}
+
+.thumb-img{
+	width: 15%;
+	/* Grayscale all thumbnail images */
+	filter:  grayscale(1);
+}
+
+.thumb-img.highlight{
+	/* Turn off grayscale only for current thumbnail image */
+	filter: grayscale(0);
+}
